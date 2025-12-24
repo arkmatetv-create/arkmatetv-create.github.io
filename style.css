@@ -38,13 +38,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-.logo-container:hover {
-    opacity: 0.8;
 }
 
 .nav-logo {
@@ -280,28 +273,9 @@ body {
 }
 
 .step-text p {
-    margin: 0 0 15px 0;
+    margin: 0;
     color: var(--text-gray);
     font-size: 14px;
-}
-
-.step-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-    margin-top: 15px;
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.step-note {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: rgba(0, 122, 255, 0.1);
-    border-left: 3px solid var(--primary-blue);
-    border-radius: 5px;
-    font-size: 13px;
-    color: var(--text-gray);
 }
 
 .download-btn {
