@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkmate TV Promo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            animation-fill-mode: forwards;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(79, 172, 254, 0.5);
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-top: 20px;
+            font-weight: 300;
+            color: #ddd;
+        }
+
+        .highlight {
+            color: #00f2fe;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            10% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            90% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Timeline configuration (Total 20s) */
+
+        /* Scene 1: Intro (0s - 5s) */
+        #scene1 {
+            animation: fadeInOut 5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Scene 2: Features (5s - 10s) */
+        #scene2 {
+            animation: fadeInOut 5s ease-in-out forwards;
+            animation-delay: 5.5s;
+        }
+
+        /* Scene 3: Platform (10s - 15s) */
+        #scene3 {
+            animation: fadeInOut 5s ease-in-out forwards;
+            animation-delay: 10.5s;
+        }
+
+        /* Scene 4: CTA (15s - 20s) */
+        #scene4 {
+            opacity: 0;
+            animation: finalFadeIn 1s ease-out forwards;
+            animation-delay: 15.5s;
+        }
+
+        @keyframes finalFadeIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .bg-gradient {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, #1a2a6c, #b21f1f, #fdbb2d);
+            background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+            z-index: -1;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .mockup {
+            width: 60%;
+            max-width: 800px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <!-- Scene 1: Brand Intro -->
+    <div id="scene1" class="scene">
+        <h1>ARKMATE TV</h1>
+        <h2>Mac İçin En İyi IPTV Deneyimi<br><small style="font-size: 2rem; opacity: 0.7;">The Best IPTV Experience for
+                Mac</small></h2>
+    </div>
+
+    <!-- Scene 2: No Ads / Smooth -->
+    <div id="scene2" class="scene">
+        <h1>🚫 REKLAM YOK / NO ADS</h1>
+        <h1>⚡️ DONMA YOK / NO LAG</h1>
+        <div class="mockup">
+            ▶️ Pure Entertainment
+        </div>
+    </div>
+
+    <!-- Scene 3: Native & Fast -->
+    <div id="scene3" class="scene">
+        <h1>🚀 NATIVE PERFORMANCE</h1>
+        <h2>VLC Altyapısı ile Güçlendirildi<br><small style="font-size: 2rem; opacity: 0.7;">Powered by VLC
+                Engine</small></h2>
+    </div>
+
+    <!-- Scene 4: Call to Action -->
+    <div id="scene4" class="scene">
+        <h1>HEMEN İNDİR / DOWNLOAD NOW</h1>
+        <h2 style="color: #4facfe;">arkmatetv-create.github.io</h2>
+        <div
+            style="margin-top: 40px; padding: 20px 40px; background: white; color: black; border-radius: 50px; font-weight: bold; font-size: 2rem;">
+            FREE / ÜCRETSİZ
+        </div>
+    </div>
+
+</body>
+
+</html>

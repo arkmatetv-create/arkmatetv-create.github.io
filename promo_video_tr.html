@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkmate TV Tanıtım - Türkçe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin: 0;
+            z-index: 2;
+            text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #ddd;
+            z-index: 2;
+            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .app-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 15px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Animations */
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            15% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            85% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -40%);
+            }
+
+            15% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            85% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+        }
+
+        /* Timeline (Total 30s) */
+        #s1 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 0s;
+        }
+
+        #s2 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 5s;
+        }
+
+        #s3 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 10s;
+        }
+
+        #s4 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 15s;
+        }
+
+        #s5 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 20s;
+        }
+
+        #s6 {
+            animation: fadeInZoom 5s ease-in-out forwards;
+            animation-delay: 25s;
+        }
+
+        .bg-blur {
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px) brightness(0.4);
+            z-index: 0;
+            animation: moveSlow 20s linear infinite;
+        }
+    </style>
+
+
+    @keyframes moveSlow {
+    0% {
+    transform: translate(0, 0);
+    }
+
+    100% {
+    transform: translate(-5%, -5%);
+    }
+    }
+
+    @keyframes fadeInStay {
+    0% { opacity: 0; transform: scale(0.9); }
+    15% { opacity: 1; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.05); }
+    }</style>
+</head>
+
+<body>
+
+    <!-- Scene 1: Intro -->
+    <div id="s1" class="scene">
+        <div class="bg-blur" style="background-image: url('images/final_generic_live.png');"></div>
+        <h1>ARKMATE TV</h1>
+        <h2>Mac İçin Mükemmel Deneyim</h2>
+        <img src="images/final_generic_live.png" class="app-img" style="transform: translate(-50%, -50%) scale(0.8);">
+    </div>
+
+    <!-- Scene 2: EPG & Favorites -->
+    <div id="s2" class="scene">
+        <div class="bg-blur" style="background-image: url('images/final_generic_live.png');"></div>
+        <h1>EPG & FAVORİLER</h1>
+        <h2>Sevdiğiniz Kanalları Kaydedin</h2>
+        <img src="images/final_generic_live.png" class="app-img" style="transform: translate(-50%, -40%) scale(0.9);">
+    </div>
+
+    <!-- Scene 3: Movies -->
+    <div id="s3" class="scene">
+        <div class="bg-blur" style="background-image: url('images/final_generic_movies.png');"></div>
+        <h1>4K FİLM & DİZİ</h1>
+        <h2>Devasa Arşiv</h2>
+        <img src="images/final_generic_movies.png" class="app-img" style="animation: slideUp 5s forwards;">
+    </div>
+
+    <!-- Scene 4: No Lag / Ads -->
+    <div id="s4" class="scene">
+        <div class="bg-blur" style="background-image: url('images/perfect_live.png');"></div>
+        <h1 style="color:#00f2fe">DONMA YOK</h1>
+        <h2>Reklam Yok. Kesinti Yok.</h2>
+        <img src="images/perfect_live.png" class="app-img" style="width: 80%;">
+    </div>
+
+    <!-- Scene 5: Language & Search -->
+    <div id="s5" class="scene">
+        <div class="bg-blur" style="background-image: url('images/final_generic_live.png');"></div>
+        <h1>ÇOKLU DİL & ARAMA</h1>
+        <h2>Akıllı Arama Özelliği</h2>
+        <img src="images/final_generic_live.png" class="app-img" style="transform: translate(-50%, -50%) scale(0.8);">
+    </div>
+
+    <!-- Scene 6: CTA -->
+    <div id="s6" class="scene" style="background: linear-gradient(45deg, #000428, #004e92);">
+        <h1>HEMEN İNDİR</h1>
+        <h2 style="color: #4facfe;">arkmatetv-create.github.io</h2>
+        <div
+            style="margin-top: 30px; font-size: 2rem; border: 2px solid white; padding: 10px 30px; border-radius: 50px;">
+            MAC İÇİN ÜCRETSİZ</div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            // Audio setup
+            const audio = new Audio('audio/promo_tr.mp3');
+
+            // Click anywhere to start
+            document.body.addEventListener('click', function () {
+                startPresentation();
+            }, { once: true });
+
+            const hint = document.createElement('div');
+            hint.innerHTML = "KAYDI BAŞLATMAK İÇİN TIKLA";
+            hint.style.cssText = "position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:white; font-size:3rem; z-index:999; background:rgba(0,0,0,0.8); padding:20px; border-radius:20px; cursor:pointer;";
+            document.body.appendChild(hint);
+
+            function startPresentation() {
+                hint.remove();
+                audio.play().catch(e => console.log("Audio play failed:", e));
+
+                // Restart animations for sync
+                const scenes = document.querySelectorAll('.scene');
+                scenes.forEach(scene => {
+                    scene.style.animationName = 'none';
+                    scene.offsetHeight; /* trigger reflow */
+                    scene.style.animationName = '';
+                });
+
+                const timelineStyles = document.createElement('style');
+                timelineStyles.innerHTML = `
+                    #s1 { animation: fadeInZoom 7.5s ease-in-out forwards; animation-delay: 0s; }
+                    #s2 { animation: fadeInZoom 7.5s ease-in-out forwards; animation-delay: 7.5s; }
+                    #s3 { animation: fadeInZoom 7.5s ease-in-out forwards; animation-delay: 15s; }
+                    #s4 { animation: fadeInZoom 7.5s ease-in-out forwards; animation-delay: 22.5s; }
+                    #s5 { animation: fadeInZoom 7.5s ease-in-out forwards; animation-delay: 30s; }
+                    #s6 { animation: fadeInStay 10s ease-in-out forwards; animation-delay: 37.5s; }
+                `;
+                document.head.appendChild(timelineStyles);
+            }
+        };
+    </script>
+</body>
+
+</html>
