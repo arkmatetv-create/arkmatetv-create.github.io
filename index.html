@@ -1,225 +1,207 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="google-site-verification" content="qi5pzf4_uQWwCfyx2uao8FfqoLHSCeLmSf0zt7DtLJM" />
-    <title>Arkmate TV - Best IPTV Player for Mac | macOS IPTV App</title>
-    <meta name="description"
-        content="Arkmate TV is the best free IPTV player for macOS. Watch live TV, movies, and series with EPG support. Download the best Mac IPTV player now.">
-    <meta name="keywords"
-        content="mac iptv player, iptv for mac, macos iptv, iptv player macos, best iptv player mac, free iptv mac, mac tv player, iptv app mac, m3u player mac, xtream codes mac">
+    <title>Arkmate TV | Xtream IPTV Player for macOS</title>
+    <meta name="description" content="Arkmate TV is a modern IPTV player for macOS. Sign in with your own Xtream credentials to browse live TV, movies, series, downloads and settings in a native Mac interface.">
+    <meta name="keywords" content="xtream player mac, iptv player macos, mac xtream app, live tv player mac, movie library mac, series player macos">
     <meta name="author" content="Arkmate TV">
     <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:title" content="Arkmate TV - Best IPTV Player for Mac">
-    <meta property="og:description"
-        content="The fastest and most modern IPTV player for macOS. Live TV, Movies, Series with EPG support.">
-    <meta property="og:image" content="images/hero_en.png">
+    <meta property="og:title" content="Arkmate TV | Xtream IPTV Player for macOS">
+    <meta property="og:description" content="Use your own Xtream credentials to browse live TV, movies and series in a polished macOS player.">
+    <meta property="og:image" content="images/store_live.png">
     <meta property="og:url" content="https://arkmatetv-create.github.io">
     <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arkmate TV - Best IPTV Player for Mac">
-    <meta name="twitter:description" content="The fastest and most modern IPTV player for macOS.">
-    <meta name="twitter:image" content="images/hero_en.png">
-
-    <!-- Favicon -->
+    <meta name="twitter:title" content="Arkmate TV | Xtream IPTV Player for macOS">
+    <meta name="twitter:description" content="A modern Xtream IPTV player designed for macOS.">
+    <meta name="twitter:image" content="images/store_live.png">
+    <link rel="canonical" href="https://arkmatetv-create.github.io">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://arkmatetv-create.github.io">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Arkmate TV",
-      "operatingSystem": "macOS",
-      "applicationCategory": "MultimediaApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      },
-      "description": "Arkmate TV is the best free IPTV player for macOS. Watch live TV, movies, and series with EPG support.",
-      "image": "https://arkmatetv-create.github.io/images/logo.png",
-      "url": "https://arkmatetv-create.github.io/"
-    }
-    </script>
 </head>
-
 <body>
+    <div class="site-shell">
+        <header class="topbar">
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Arkmate TV logo">
+                <span>Arkmate TV</span>
+            </a>
+            <nav class="topnav">
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+                <a href="#support" data-i18n="nav_support">Support</a>
+                <a href="privacy/" data-i18n="nav_privacy">Privacy</a>
+                <a class="tour-link" id="tour-link" href="promo_video_en.html" data-i18n="nav_product">Product Tour</a>
+                <select id="language-select" aria-label="Language switcher">
+                    <option value="en">EN</option>
+                    <option value="tr">TR</option>
+                </select>
+            </nav>
+        </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="Arkmate TV Logo" class="nav-logo">
-            <span class="logo-text">ARKMATE TV</span>
-        </a>
-        <div class="nav-links">
-            <a href="#features" data-i18n="features">Özellikler</a>
-            <a href="#install" data-i18n="installation">Kurulum</a>
-            <a href="#contact" data-i18n="contact">İletişim</a>
-            <select id="header-lang-select" class="lang-select">
-                <option value="en">🇺🇸 EN</option>
-                <option value="tr">🇹🇷 TR</option>
-                <option value="de">🇩🇪 DE</option>
-                <option value="fr">🇫🇷 FR</option>
-                <option value="it">🇮🇹 IT</option>
-                <option value="pt">🇵🇹 PT</option>
-                <option value="ar">🇸🇦 AR</option>
-            </select>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 data-i18n="hero_title">Televizyon Deneyimini<br>Yeniden Keşfedin.</h1>
-            <p data-i18n="hero_desc">macOS için tasarlanmış en hızlı ve modern IPTV oynatıcısı. Canlı TV, Filmler,
-                Diziler ve daha fazlası.</p>
-            <div class="hero-buttons">
-                <a href="#install" class="btn primary-btn"><span data-i18n="download_btn">İndir</span>
-                    <small>(v1.2)</small></a>
-                <a href="#features" class="btn secondary-btn" data-i18n="learn_more">Daha Fazla</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img id="hero-app-img" src="images/hero_tr.png" alt="Arkmate TV Interface">
-        </div>
-    </header>
-
-    <!-- Features -->
-    <section id="features" class="features">
-        <div class="section-header">
-            <h2 data-i18n="features_title">Neden Arkmate TV?</h2>
-            <p data-i18n="features_subtitle">Size özel geliştirilmiş premium özellikler.</p>
-        </div>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="icon">📺</div>
-                <h3 data-i18n="feat_1_title">Canlı TV & EPG</h3>
-                <p data-i18n="feat_1_desc">Kesintisiz yayın akışı ve detaylı elektronik program rehberi ile hiçbir şeyi
-                    kaçırmayın.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">🎬</div>
-                <h3 data-i18n="feat_2_title">Film & Dizi Arşivi</h3>
-                <p data-i18n="feat_2_desc">Gelişmiş filtreleme, favoriler ve "İzlemeye Devam Et" özelliği ile sinema
-                    keyfi.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">⚡️</div>
-                <h3 data-i18n="feat_3_title">Yüksek Performans</h3>
-                <p data-i18n="feat_3_desc">VLC tabanlı oynatıcı sayesinde donmadan, takılmadan 4K yayın desteği.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">🎨</div>
-                <h3 data-i18n="feat_4_title">Modern Arayüz</h3>
-                <p data-i18n="feat_4_desc">Kullanıcı dostu, Mavi-Beyaz temalı şık ve profesyonel tasarım.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Compatibility -->
-    <section class="compatibility">
-        <div class="compat-container">
-            <div class="compat-item">
-                <span class="compat-icon">💻</span>
-                <div class="compat-text">
-                    <strong data-i18n="compat_os_title">Minimum Requirements</strong>
-                    <p data-i18n="compat_os_desc">macOS 12.0 (Monterey) or later</p>
-                </div>
-            </div>
-            <div class="compat-item">
-                <span class="compat-icon">🚀</span>
-                <div class="compat-text">
-                    <strong data-i18n="compat_proc_title">Architecture Support</strong>
-                    <p data-i18n="compat_proc_desc">Intel & Apple Silicon (M1/M2/M3) Optimized</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Installation Guide -->
-    <section id="install" class="installation">
-        <div class="install-container">
-            <h2 data-i18n="install_title">Kurulum Talimatları</h2>
-            <p class="warning" data-i18n="install_warning">⚠️ Önemli: App Store dışından indirildiği için ilk açılışta
-                izin gerekebilir.</p>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-num">1</div>
-                    <div class="step-text">
-                        <strong data-i18n="step_1_title">Uygulamayı İndirin</strong>
-                        <p data-i18n="step_1_desc">En son sürüm .zip dosyasını bilgisayarınıza indirin.</p>
-                        <img src="images/step1_warning.png" alt="macOS Security Warning" class="step-img">
-                        <p class="step-note"><strong>Not:</strong> İlk açılışta yukarıdaki uyarıyı görebilirsiniz.
-                            Normal bir durumdur.</p>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow" data-i18n="hero_eyebrow">Xtream IPTV player for macOS</span>
+                    <h1 data-i18n="hero_title">Your IPTV service, refined for the Mac.</h1>
+                    <p class="hero-text" data-i18n="hero_text">Sign in with your own Xtream credentials and browse live TV, movies, series, downloads and settings in a clean macOS-first interface.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#screenshots" data-i18n="hero_primary">View Screenshots</a>
+                        <a class="button secondary" id="hero-tour-link" href="promo_video_en.html" data-i18n="hero_secondary">Open Product Tour</a>
+                    </div>
+                    <div class="hero-note">
+                        <strong data-i18n="legal_title">Important</strong>
+                        <p data-i18n="hero_note">Arkmate TV does not provide media content. Users must supply their own Xtream API credentials.</p>
                     </div>
                 </div>
-                <div class="step">
-                    <div class="step-num">2</div>
-                    <div class="step-text">
-                        <strong data-i18n="step_2_title">Sağ Tıklayıp Açın</strong>
-                        <p data-i18n="step_2_desc">Uygulamaya <b>sağ tıklayın</b> ve <b>"Aç"</b> seçeneğini seçin.</p>
-                        <img src="images/step2_rightclick.png" alt="Right Click Open" class="step-img">
-                    </div>
+                <div class="hero-visual">
+                    <img src="images/store_live.png" alt="Arkmate TV live TV screenshot">
                 </div>
-                <div class="step">
-                    <div class="step-num">3</div>
-                    <div class="step-text">
-                        <strong data-i18n="step_3_title">Sistem Ayarlarından İzin Verin</strong>
-                        <p data-i18n="step_3_desc">Eğer hala açılmıyorsa: <b>Sistem Ayarları</b> → <b>Gizlilik ve
-                                Güvenlik</b> → <b>"Yine de Aç"</b> butonuna tıklayın.</p>
-                        <img src="images/step3_security.png" alt="System Settings Security" class="step-img">
-                    </div>
+            </section>
+
+            <section class="feature-strip">
+                <div class="feature-chip">
+                    <span>macOS 12+</span>
+                    <small data-i18n="chip_macos">Monterey or later</small>
                 </div>
+                <div class="feature-chip">
+                    <span>Intel + Apple Silicon</span>
+                    <small data-i18n="chip_arch">Native desktop support</small>
+                </div>
+                <div class="feature-chip">
+                    <span data-i18n="chip_demo_title">Demo Mode</span>
+                    <small data-i18n="chip_demo_text">Safe review flow built in</small>
+                </div>
+            </section>
+
+            <section id="features" class="section-block">
+                <div class="section-heading">
+                    <span class="eyebrow" data-i18n="features_eyebrow">Built for everyday playback</span>
+                    <h2 data-i18n="features_title">Everything the Mac App Store page should make clear.</h2>
+                    <p data-i18n="features_text">Arkmate TV is a player client. It focuses on login, playback, browsing and local convenience features without claiming ownership of any content.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_1_title">Xtream API login</h3>
+                        <p data-i18n="feature_1_text">Connect using your own Xtream credentials and keep the normal login flow intact.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_2_title">Live TV with EPG</h3>
+                        <p data-i18n="feature_2_text">Browse channels quickly, keep favorites close and view program guide details when available.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_3_title">Movies and series</h3>
+                        <p data-i18n="feature_3_text">Navigate organized VOD and series libraries with continue watching and library-focused navigation.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_4_title">Player controls</h3>
+                        <p data-i18n="feature_4_text">Use subtitles, audio tracks, fullscreen, keyboard shortcuts and responsive playback controls.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_5_title">Downloads and recording</h3>
+                        <p data-i18n="feature_5_text">Store supported playback locally with download and recording tools built for desktop usage.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_6_title">Demo mode for review</h3>
+                        <p data-i18n="feature_6_text">A separate demo entry point lets App Review test navigation and playback without user credentials.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="screenshots" class="section-block screenshots-block">
+                <div class="section-heading compact">
+                    <span class="eyebrow" data-i18n="screenshots_eyebrow">Clean marketing visuals</span>
+                    <h2 data-i18n="screenshots_title">Prepared for App Store and website use.</h2>
+                    <p data-i18n="screenshots_text">The screenshot set uses generic naming and placeholder-style artwork to avoid third-party branding or copyrighted media references.</p>
+                </div>
+                <div class="shot-grid">
+                    <article class="shot-card large">
+                        <img src="images/store_live.png" alt="Live TV marketing screenshot">
+                        <div class="shot-copy">
+                            <h3>FAST LIVE TV</h3>
+                            <p data-i18n="shot_live">Browse channels instantly</p>
+                        </div>
+                    </article>
+                    <article class="shot-card">
+                        <img src="images/store_player.png" alt="Player marketing screenshot">
+                        <div class="shot-copy">
+                            <h3>POWERFUL VIDEO PLAYER</h3>
+                            <p data-i18n="shot_player">Smooth playback controls</p>
+                        </div>
+                    </article>
+                    <article class="shot-card">
+                        <img src="images/store_movies.png" alt="Movie library marketing screenshot">
+                        <div class="shot-copy">
+                            <h3>MOVIE LIBRARY</h3>
+                            <p data-i18n="shot_movies">Organized content browsing</p>
+                        </div>
+                    </article>
+                    <article class="shot-card">
+                        <img src="images/store_settings.png" alt="Settings marketing screenshot">
+                        <div class="shot-copy">
+                            <h3>SMART SETTINGS</h3>
+                            <p data-i18n="shot_settings">Customize your experience</p>
+                        </div>
+                    </article>
+                    <article class="shot-card">
+                        <img src="images/store_series.png" alt="Series marketing screenshot">
+                        <div class="shot-copy">
+                            <h3>SERIES &amp; FAVORITES</h3>
+                            <p data-i18n="shot_series">Access your content quickly</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-block review-block">
+                <div class="review-card">
+                    <div>
+                        <span class="eyebrow" data-i18n="review_eyebrow">App Review ready</span>
+                        <h2 data-i18n="review_title">Demo Mode is the review path.</h2>
+                        <p data-i18n="review_text">For App Review, the app can be tested through the built-in Demo Mode entry on the login screen. It allows safe interface browsing and playback checks without end-user credentials.</p>
+                    </div>
+                    <a class="button secondary" id="review-tour-link" href="promo_video_en.html" data-i18n="review_button">See Product Tour</a>
+                </div>
+            </section>
+
+            <section id="support" class="section-block support-block">
+                <div class="section-heading compact">
+                    <span class="eyebrow" data-i18n="support_eyebrow">Support and compliance</span>
+                    <h2 data-i18n="support_title">Clear contact and legal information.</h2>
+                </div>
+                <div class="support-grid">
+                    <article class="support-card">
+                        <h3 data-i18n="support_contact_title">Contact support</h3>
+                        <p data-i18n="support_contact_text">Questions, review follow-up or customer issues can be sent directly by email.</p>
+                        <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
+                    </article>
+                    <article class="support-card">
+                        <h3 data-i18n="support_privacy_title">Privacy policy</h3>
+                        <p data-i18n="support_privacy_text">The privacy page is available for App Store metadata and user-facing compliance links.</p>
+                        <a href="privacy/" data-i18n="nav_privacy">Privacy</a>
+                    </article>
+                    <article class="support-card legal-card">
+                        <h3 data-i18n="legal_title">Important</h3>
+                        <p data-i18n="legal_text">Arkmate TV does not provide any media content. Users must supply their own Xtream API credentials.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Arkmate TV</p>
+            <div class="footer-links">
+                <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
+                <a href="privacy/" data-i18n="nav_privacy">Privacy</a>
             </div>
-
-            <a href="https://drive.google.com/uc?export=download&id=1OlUSXhrD-kEGaHUVXhn_Fq-tFelCdf41"
-                class="btn download-btn">macOS İçin İndir (.dmg)</a>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2 data-i18n="contact_title">Destek & İletişim</h2>
-        <p data-i18n="contact_desc">Sorularınız veya geri bildirimleriniz için bize ulaşın.</p>
-        <a href="mailto:arkmatetv@gmail.com" class="email-link">arkmatetv@gmail.com</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Arkmate TV. All rights reserved.</p>
-        <div class="footer-lang">
-            <select id="footer-lang-select" class="lang-select">
-                <option value="en">English</option>
-                <option value="tr">Türkçe</option>
-                <option value="de">Deutsch</option>
-                <option value="fr">Français</option>
-                <option value="it">Italiano</option>
-                <option value="pt">Português</option>
-                <option value="ar">العربية</option>
-            </select>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
