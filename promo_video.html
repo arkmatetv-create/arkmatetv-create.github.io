@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkmate TV Product Tour</title>
-    <meta http-equiv="refresh" content="0; url=promo_video_en.html">
+    <title>Arkmate TV | Product Tour</title>
+    <meta name="description" content="A store-safe product tour for Arkmate TV on iPhone, iPad and macOS.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260424e">
 </head>
-<body>
-    <p>Redirecting to <a href="promo_video_en.html">Arkmate TV Product Tour</a>...</p>
+<body data-page="promo">
+    <header class="topbar">
+        <a href="index.html" class="brand" aria-label="Arkmate TV home">
+            <img src="images/logo.png" alt="Arkmate TV logo">
+            <span>Arkmate TV</span>
+        </a>
+
+        <div class="platform-switch" aria-label="Platform">
+            <button type="button" data-platform-button="ios">iOS + iPad</button>
+            <button type="button" data-platform-button="macos">macOS</button>
+        </div>
+
+        <nav class="topnav" aria-label="Primary navigation">
+            <a href="index.html#features" data-home-hash="#features" data-i18n="nav_features">Features</a>
+            <a href="index.html#screenshots" data-home-hash="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+            <a href="index.html#support" data-home-hash="#support" data-i18n="nav_support">Support</a>
+            <a href="privacy/" data-privacy-link data-i18n="nav_privacy">Privacy</a>
+            <a class="tour-link" href="promo_video.html" data-i18n="nav_product">Product Tour</a>
+            <select id="language-select" aria-label="Language switcher">
+                <option value="en">English</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tour-hero">
+            <span id="tour-eyebrow" class="eyebrow">Product tour</span>
+            <h1 id="tour-title">Arkmate TV product tour</h1>
+            <p id="tour-text" class="hero-lead">A quick walkthrough of the player experience.</p>
+            <div class="hero-actions">
+                <a class="button primary" href="index.html#screenshots" data-home-hash="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+                <a class="button secondary" href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
+            </div>
+        </section>
+
+        <section class="tour-layout" aria-label="Product tour steps">
+            <div id="tour-steps" class="tour-steps"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Arkmate TV</p>
+        <div class="footer-links">
+            <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
+            <a href="privacy/" data-privacy-link data-i18n="nav_privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="script.js?v=20260424e"></script>
 </body>
 </html>

@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Arkmate TV</title>
-    <meta name="description" content="Privacy information for Arkmate TV.">
+    <title>Arkmate TV | Privacy Policy</title>
+    <meta name="description" content="Privacy policy for Arkmate TV, an IPTV player for iPhone, iPad and macOS.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="apple-touch-icon" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../images/logo.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css?v=20260424e">
 </head>
-<body>
-    <div class="site-shell">
-        <header class="topbar">
-            <a href="../index.html" class="brand">
-                <img src="../images/logo.png" alt="Arkmate TV logo">
-                <span>Arkmate TV</span>
-            </a>
-            <nav class="topnav">
-                <a href="../index.html#support">Support</a>
-                <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
-            </nav>
-        </header>
+<body data-page="privacy">
+    <header class="topbar">
+        <a href="../index.html" class="brand" aria-label="Arkmate TV home">
+            <img src="../images/logo.png" alt="Arkmate TV logo">
+            <span>Arkmate TV</span>
+        </a>
 
-        <main class="section-block">
-            <div class="section-heading compact">
-                <span class="eyebrow">Privacy Policy</span>
-                <h2>Arkmate TV privacy information.</h2>
-                <p>Arkmate TV is a player application for macOS. It does not provide media content. Users sign in with their own Xtream credentials.</p>
-            </div>
+        <div class="platform-switch" aria-label="Platform">
+            <button type="button" data-platform-button="ios">iOS + iPad</button>
+            <button type="button" data-platform-button="macos">macOS</button>
+        </div>
 
-            <div class="support-grid">
-                <article class="support-card">
-                    <h3>Data used inside the app</h3>
-                    <p>The app stores user-provided Xtream connection details locally on the device when the user chooses to save or restore a session. This data is used only to enable playback, library browsing and session recovery.</p>
-                </article>
-                <article class="support-card">
-                    <h3>Downloads and local storage</h3>
-                    <p>If the user uses download or recording features, related files are stored locally in the user-selected or app-supported macOS storage locations.</p>
-                </article>
-                <article class="support-card">
-                    <h3>Support contact</h3>
-                    <p>For privacy questions, App Review follow-up or support requests, contact <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>.</p>
-                </article>
-            </div>
+        <nav class="topnav" aria-label="Primary navigation">
+            <a href="../index.html#features" data-home-hash="#features" data-i18n="nav_features">Features</a>
+            <a href="../index.html#screenshots" data-home-hash="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+            <a href="../index.html#support" data-home-hash="#support" data-i18n="nav_support">Support</a>
+            <a href="./" data-privacy-link data-i18n="nav_privacy">Privacy</a>
+            <a class="tour-link" href="../promo_video.html" data-i18n="nav_product">Product Tour</a>
+            <select id="language-select" aria-label="Language switcher">
+                <option value="en">English</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </nav>
+    </header>
 
-            <div class="hero-note" style="margin-top: 22px;">
-                <strong>Legal notice</strong>
-                <p>Arkmate TV does not provide any media content. Users must supply their own Xtream API credentials.</p>
-            </div>
-        </main>
-    </div>
+    <main>
+        <section class="privacy-hero">
+            <span class="eyebrow" data-i18n="nav_privacy">Privacy</span>
+            <h1 id="privacy-title">Privacy Policy</h1>
+            <p id="privacy-lead" class="hero-lead">Arkmate TV is a player app. It does not provide channels, media libraries or IPTV subscriptions.</p>
+        </section>
+
+        <section class="privacy-layout" aria-label="Privacy policy details">
+            <div id="privacy-grid" class="privacy-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Arkmate TV</p>
+        <div class="footer-links">
+            <a href="mailto:arkmatetv@gmail.com">arkmatetv@gmail.com</a>
+            <a href="./" data-privacy-link data-i18n="nav_privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="../script.js?v=20260424e"></script>
 </body>
 </html>
